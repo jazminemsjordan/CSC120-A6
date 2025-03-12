@@ -18,7 +18,7 @@ public class Engine {
     }
 
     /**
-     * Method to retrieve FuelType
+     * Accessor to retrieve FuelType
      * @return the fuel type of the engine
      */
     public FuelType getFuelType() {
@@ -26,7 +26,7 @@ public class Engine {
     }
 
     /**
-     * Method to retrieve maxFuelLevel
+     * Accessor to retrieve maxFuelLevel
      * @return the engine's max fuel capacity.
      */
     public double getMaxFuel() {
@@ -34,7 +34,7 @@ public class Engine {
     }
 
     /**
-     * Method to retrieve currentFuelLevel
+     * Accessor to retrieve currentFuelLevel
      * @return the current amount of fuel in the engine tank
      */
     public double getCurrentFuel() {

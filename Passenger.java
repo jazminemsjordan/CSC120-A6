@@ -14,6 +14,7 @@ public class Passenger {
 
     /**
      * Method to board a certain car
+     * @param c Car for passenger to board
      */
     public void boardCar(Car c) {
         if (c.addPassenger(this)) {
@@ -25,6 +26,7 @@ public class Passenger {
 
     /**
      * Method to get off a certain car
+     * @param c Car for passenger to deboard
      */
     public void getOffCar(Car c) {
         if (c.removePassenger(this)) {
@@ -32,6 +34,14 @@ public class Passenger {
         } else {
             System.out.println("Deboarding failed.");
         }
+    }
+
+    /**
+     * Accessor to retrieve passenger name
+     * @return name of the passenger
+     */
+    public String getName() {
+        return this.name;
     }
 
 }
